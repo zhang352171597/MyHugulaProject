@@ -16,4 +16,4 @@ StateManager.load_scene = StateBase({"load_scene"})
 StateManager.load_extends = StateBase({"load_extends"})
 
 -- MyGame
-StateManager.loginMain = StateBase({"loginMainModel"})
+StateManager.loginMain = StateBase({"LoginMainModel"})

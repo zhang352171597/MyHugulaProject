@@ -44,18 +44,19 @@ local StateManager = StateManager
 local delay = delay
 local Proxy = Proxy --网络代理
 local get_value = get_value --多国语言
+
 ---------C#----------------
 local LuaHelper=LuaHelper
 
 ---------local----------
 
+
 --UI资源
 LoginMainModel.assets=
 {
-    View("LoginMainView" , LoginMainModel),
+    View("LoginMainView" , LoginMainModel)
     -- View("you_view_name1","your_viewmodel_name",{"sub_view_name1"},{"sub_view_name1","sub_view_model_name"})
 }
-
 ------------------private-----------------
 
 
@@ -92,7 +93,7 @@ LoginMainModel.assets=
 
 --显示时候调用 
 function LoginMainModel:on_showed( ... )
-    print("zzq#on_showed===>")
+    
 end
 
 --当前StateManager:get_current_state()所有原始itemObject显示完毕后调用

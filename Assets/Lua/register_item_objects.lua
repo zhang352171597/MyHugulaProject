@@ -18,4 +18,4 @@ LuaItemManager:register_item_object("load_scene","viewmodels/load_scene",false,t
 LuaItemManager:register_item_object("load_extends","viewmodels/load_extends",false,true)-- 标记释放
 
 --MyGame
-LuaItemManager:register_item_object("loginMain","MyGame/Logic/UI/Model/LoginMainModel",false)
+LuaItemManager:register_item_object("LoginMainModel","MyGame/Logic/UI/Model/LoginMainModel",false)

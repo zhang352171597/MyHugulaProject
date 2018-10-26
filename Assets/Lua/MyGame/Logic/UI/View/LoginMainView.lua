@@ -41,7 +41,7 @@ local LuaHelper = LuaHelper
 local CSNameSpace = CSNameSpace
 
 local LoginMainView = class(Asset,function(self,item_obj)
-    Asset._ctor(self, "your_assetbundle_name.u3d")
+    Asset._ctor(self, "welcome.u3d")
     self.item_obj = item_obj
 end)
 
@@ -58,7 +58,6 @@ function LoginMainView:dispose()
  end
 
 function LoginMainView:databind(item_obj,property_name)
-    print("zzq#===>   ")
     -- if property_name == item_obj.get_npc_map_ack then
     --     self:show_npc_map(item_obj:get_server_source_npc_map())
     -- end
