@@ -499,7 +499,8 @@ main_viewmodel:register_property_changed(main_view)
 
 
 function main()
-    main_viewmodel:load_server_verion()
+    enter_game(true)
+    --main_viewmodel:load_server_verion()
 end
 
 

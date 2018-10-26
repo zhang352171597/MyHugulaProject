@@ -41,7 +41,7 @@ local NetAPIList = NetAPIList
 -- require("netGame")
 
 local function on_state_change(state) --资源回收
-	if state == StateManager.welcome then --当切换到welcome状态时候
+	if state == StateManager.loginMain then --当切换到welcome状态时候
 		StateManager:auto_dispose_items() --回收标记的item_object
 		unload_unused_assets()
 	end
@@ -65,7 +65,7 @@ end
 pLua.updateFn=update
 
 StateManager:input_disable() --锁定输入
-StateManager:set_current_state(StateManager.welcome)
+StateManager:set_current_state(StateManager.loginMain)
 StateManager:register_state_change(on_state_change,true)
 StateManager:register_state_changing(on_state_changing,true)
 
