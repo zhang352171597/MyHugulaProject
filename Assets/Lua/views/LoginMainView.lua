@@ -41,13 +41,15 @@ local LuaHelper = LuaHelper
 local CSNameSpace = CSNameSpace
 
 local LoginMainView = class(Asset,function(self,item_obj)
-    Asset._ctor(self, "welcome.u3d")
+    Asset._ctor(self, "LoginMainPanel.u3d")
     self.item_obj = item_obj
 end)
 
 function LoginMainView:on_asset_load(key,asset)
     self.item_obj:register_property_changed(self.databind,self)
-
+    local fristView = LuaHelper.Find("Logo")
+    if fristView then LuaHelper.Destroy(fristView) end
+    
     -- local refer = LuaHelper.GetComponent(self.root,CSNameSpace.ReferGameObjects) 
 	-- self.refer = refer
 end
