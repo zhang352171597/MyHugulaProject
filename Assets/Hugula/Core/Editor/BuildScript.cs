@@ -257,7 +257,7 @@ namespace Hugula.Editor {
             AssetImporter
             import = AssetImporter.GetAtPath (abPath);
             string folder = EditorUtils.GetLabelsByPath (abPath);
-            string objName = s.name.ToLower ();
+            string objName = s.name; //s.name.ToLower ();
             if (replace) {
                 objName = HugulaEditorSetting.instance.GetAssetBundleNameByReplaceIgnore (objName);
                 // Debug.LogFormat ("{0} replace {1}", s.name, objName);
