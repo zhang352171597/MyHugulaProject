@@ -38,7 +38,6 @@
 ---------------------------------------------------------------------------------------------------
 
 local LuaHelper = LuaHelper
-local CSNameSpace = CSNameSpace
 
 local LoginMainView = class(Asset,function(self,item_obj)
     Asset._ctor(self, "LoginMainPanel.u3d")
@@ -50,7 +49,8 @@ function LoginMainView:on_asset_load(key,asset)
     local fristView = LuaHelper.Find("Logo")
     if fristView then LuaHelper.Destroy(fristView) end
     
-    -- local refer = LuaHelper.GetComponent(self.root,CSNameSpace.ReferGameObjects) 
+    -- 获取内部组件
+    local refer = LuaHelper.GetComponent(self.root,"Hugula.ReferGameObjects")
 	-- self.refer = refer
 end
 
